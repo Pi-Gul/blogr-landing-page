@@ -1,2 +1,311 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* COMMON */
+* {
+    --light-red: hsl(356, 100%, 66%);
+    --very-light-red: hsl(355, 100%, 74%);
+    --very-dark-blue: hsl(208, 49%, 24%);
+    --grayish-blue: hsl(240, 2%, 79%);
+    --very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --very-dark-black-blue: hsl(240, 10%, 16%);
+}
+h1, h2, h3 {
+    color: var(--very-dark-blue);
+    font-family: 'Overpass', sans-serif;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 600px;
+    background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: 250%, cover;
+    background-position: -200px, center center;
+    border-radius: 0 0 0 100px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+}
+header .navbar-nav {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+header .button-area {
+    border-top: 1px solid grey;
+}
+header .nav-link {
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0);
+}
+header .nav-link:hover {
+    border-bottom: 1px solid white;
+}
+header .button-area button {
+    border-radius: 35px;
+    width: 150px;
+    padding: 15px 0;
+    border: 0;
+}
+header .button-area .login {
+    background-color: hsla(0, 0%, 0%, 0);
+    color: black;
+}
+header .button-area .sign-up {
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: white;
+}
+header .button-area .sign-up:hover {
+    background-color: var(--very-light-red);
+    color: white;
+}
+.navbar {
+    margin-bottom: 100px;
+}
+.intro {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+.intro h1 {
+    font-size: 2.3rem;
+    color: white;
+}
+.intro p {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+.intro button {
+    border: 1px solid white;
+    border-radius: 35px;
+    width: 150px;
+    padding: 15px 0;
+}
+.intro button.start {
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+}
+.intro button.start:hover {
+    background-color: var(--very-light-red);
+    color: white;
+    border: 0;
+}
+.intro button.learn {
+    background-color: hsla(0, 0%, 0%, 0);
+    color: white;
+}
+.intro button.learn:hover {
+    background-color: white;
+    color: var(--very-light-red);
+}
+
+/* DESIGNED */
+.designed {
+    margin-bottom: 200px;
+}
+.designed .image-area {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/illustration-editor-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.designed .text-area {
+    width: 80%;
+    margin: 0 auto;
+}
+.designed h2 {
+    font-size: 1.8rem;
+}
+.designed h3 {
+    font-size: 1.9rem;
+}
+.designed p {
+    line-height: 1.6;
+}
+
+/* STATE */
+.state {
+    background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-size: cover, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -120px -200px, center center;
+    height: 700px;
+    border-radius: 0 100px 0 100px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.state .image-area {
+    width: 100%;
+    height: 420px;
+    background-image: url("../images/illustration-phones.svg");
+    background-size: cover;
+    position: absolute;
+    top: -150px;
+    left: 0;
+}
+.state .text-area {
+    margin-top: 300px !important;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+.state h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white;
+}
+.state p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* LAPTOP */
+.laptop {
+    margin-bottom: 100px;
+}
+.laptop .image-area {
+    height: 400px;
+    background-image: url("../images/illustration-laptop-mobile.svg");
+    background-size: cover;
+    background-position: center center;
+}
+.laptop .text-area {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--very-dark-black-blue);
+    border-radius: 0 100px 0 0;
+    padding: 100px 0;
+    color: white;
+}
+footer .logo-wrapper {
+    margin-bottom: 80px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0);
+}
+footer a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* ATTRIBUTION */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* MODAL LEARN MORE */
+#learn-more .learn-option {
+    width: 90%;
+    box-shadow:hsl(228, 45%, 44%) 0px 0px 3px;
+    padding: 8px 15px;
+}
+
+@media only screen and (min-width: 993px) {
+    header {
+        height: 480px;
+        margin-bottom: 10px;
+    }
+    .nav-link {
+        color: white !important;
+    }
+    header .navbar-nav {
+        width: 100%;
+        background-color: hsla(0, 0%, 0%, 0);
+        padding: 0;
+        border-radius: 0;
+    }
+    header .button-area {
+        border-top: 0;
+    }
+    header .button-area .login {
+        color: white;
+    }
+    header .button-area .sign-up {
+        color: black;
+        background-color: white;
+        background-image: none;
+    }
+    .intro-buttons {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .designed {
+        margin-bottom: 10px;
+    }
+    .designed h2 {
+        font-size: 2.5rem;
+        position: relative;
+        top: 100px;
+    }
+    .designed p {
+        line-height: 1.8;
+    }
+    .designed .image-area {
+        height: 750px;
+        width: 50%;
+        background-image: url("../images/illustration-editor-desktop.svg");
+        background-size: 110%;
+        background-position: 100px center;
+    }
+    .designed .text-area {
+        width: 50%;
+        padding-left: 10%;
+    }
+    .state {
+        height: 300px;
+        border-radius: 0 100px 0 100px;
+        padding-right: 10%;
+        margin-bottom: 10px;
+    }
+    .state .image-area {
+        width: 50%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: -50px;
+    }
+    .state .text-area {
+        width: 50%;
+        padding: 80px 0 0 0;
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+    .state h2 {
+        font-size: 2rem;
+    }
+    .state p {
+        font-size: 1.0rem;
+    }
+    .laptop {
+        padding-right: 10%;
+    }
+    .laptop .image-area {
+        width: 50%;
+        height: 700px;
+        background-image: url("../images/illustration-laptop-desktop.svg");
+        background-position: -250px center;
+        background-repeat: no-repeat;
+        background-size: 130%;
+    }
+    .laptop .text-area {
+        width: 50%;
+    }
+    footer {
+        border-radius: 0 100px 0 0;
+        padding: 50px 300px 20px 100px;
+    }
+}
